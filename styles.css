@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+}
+.container {
+  width: 90%;
+  max-width: 400px;
+  background-color: #00919f;
+  border-radius: 8px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.container::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://i.pinimg.com/originals/5a/d6/35/5ad635e021905a2c8711d3c4865c71ac.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  /* filter: blur(1px) */
+}
+.container .details {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #dfbebe94;
+  text-align: center;
+  padding: 30px 10px;
+  border-radius: 8px;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.icons {
+  border-radius: 6px;
+}
+.temp {
+  font-size: 30px;
+}
+.status {
+  margin: 10px 0 30px 0;
+}
+.more-info p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+.query p {
+  margin: 10px 0;
+}
+form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: #3a3a3a !important;
+  font-size: 25px;
+  color: white;
+  padding: 0 10px;
+  border-radius: 0;
+  border-radius: 0 0 0 6px;
+}
+form button[type="submit"] {
+  width: 100px;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0 0 6px 0;
+  cursor: pointer;
+  background-color: #676767;
+  color: white;
+  font-size: 30px;
+  line-height: 10px;
+}
+form input::placeholder {
+  /* font-family: 'Montserrat'; */
+  letter-spacing: 1.2px;
+  font-size: 22px;
+}
